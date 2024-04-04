@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nernny</title>
+    <link rel="shortcut icon" href="https://images-ext-1.discordapp.net/external/GB4KPkN11M3O9qX5uz_Cc9mU3J_nKCYOHGz1ndPyG_Y/%3Fsize%3D512/https/cdn.discordapp.com/avatars/324274962938724355/aff6dabfb2675936b39cb3a0a14e12c6.png?format=webp&quality=lossless" />
+</head>
+<body>
+  <div id="snackbar">Скопировано</div>
+  <div class="card">
+    <div class="ds-top"></div>
+    <div class="avatar-holder">
+      <img src="https://images-ext-1.discordapp.net/external/GB4KPkN11M3O9qX5uz_Cc9mU3J_nKCYOHGz1ndPyG_Y/%3Fsize%3D512/https/cdn.discordapp.com/avatars/324274962938724355/aff6dabfb2675936b39cb3a0a14e12c6.png?format=webp&quality=lossless" alt="Nernny">
+    </div>
+    <div class="name">
+      <!-- <a target="_blank" style="cursor: wait;" >Nernny</a> -->
+      <a target="_blank">Nernny</a>
+      <h5>Ну, я Миша</h5>
+    </div>
+    <div class="button">
+    </div>
+    <div class="ds-info">
+      <div class="ds pens" onclick="copyToClipboard('Nernny')" style="cursor: pointer;" >
+        <img src="https://img.icons8.com/?size=30&id=25627&format=png&color=FFFFFF">
+        <p>Дискордик</p>
+      </div>
+      <div class="ds projects" onclick="location.href='https://t.me/Nernny';" style="cursor: pointer;">
+        <img src="https://img.icons8.com/?size=30&id=9R1sV3QvY18K&format=png&color=FFFFFF">
+        <p>Тгешка</p>
+      </div>
+      <div class="ds posts" onclick="location.href='https://discord.gg/sydKMEAGRM';" style="cursor: pointer;">
+        <img src="https://img.icons8.com/?size=30&id=Iw8S81UFb2eR&format=png&color=FFFFFF">
+        <p>Best серв</p>
+      </div>
+    </div>
+    <div class="button">
+      <a href="#" class="btn" onclick="copyToClipboard('739615228')" style="cursor: pointer;">я еще я люблю когда..<i class="fas fa-user-plus"></i></a>
+      <!-- <a href="#" class="btn" onclick="copyToClipboard('739615228')" style="cursor: pointer;">я еще в генш играю естати)<i class="fas fa-user-plus"></i></a> -->
+    </div>
+  </div>
+<script>
+function copyToClipboard(text) {
+  var tempInput = document.createElement("input");
+  tempInput.value = text;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+  var snackbar = document.getElementById("snackbar");
+  snackbar.className = "show";
+  setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+}
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Krub:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #202020;
+  font-family: 'Krub', sans-serif;
+}
+
+.card {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 5px #9589da;
+  /* box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2); */
+  background: #151515;
+  overflow: hidden;
+  .ds-top {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 300px;
+    height: 80px;
+    background: #9589da;
+    animation: dsTop 0.5s;
+  }
+  .avatar-holder {
+    position: absolute;
+    margin: auto;
+    top: 40px;
+    right: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #151515,
+                inset 0 0 0 5px #000000,
+                inset 0 0 0 5px #000000,
+                inset 0 0 0 5px #000000,
+                inset 0 0 0 5px #000000,;
+    background: white;
+    overflow: hidden;
+    animation: mvTop 0.8s;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .name {
+    /* cursor: wait; */
+    /* cursor: url('https://img.icons8.com/?size=28&id=ErGNnzbLWUEK&format=png'), auto; */
+    position: absolute;
+    margin: auto;
+    top: -60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+    a {
+      cursor: url('https://img.icons8.com/?size=28&id=ErGNnzbLWUEK&format=png'), auto;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+        &:hover {
+          color: #9589da;
+      }
+    }
+    h6 {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: white;
+      width: 40px;
+    }
+    h5 {
+      padding: 5px 20px;
+      border-radius: 10px;
+      color: white;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      font-size: 10px;
+    }
+  }
+  .button {
+    position: absolute;
+    margin: auto;
+    padding: 8px;
+    top: 70%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+    outline: none;
+    a {
+      padding: 5px 20px;
+      border-radius: 10px;
+      color: white;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      font-size: 10px;
+      transition: all 0.5s;
+      &:hover {
+        color: white;
+        background: #9589da;
+      }
+    }
+  }
+  .btn {
+    border: #9589da solid 2px;
+    animation: fadeInMove 0.5s;
+  }
+  .btn:hover {
+    border: #9589da00 solid 2px;
+    transition: ease broder 0.5s;
+  }
+  .ds-info {
+    position: absolute;
+    /* margin: auto; */
+    margin: auto;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 90%;
+    /* width: inherit; */
+    height: 40px;
+    display: flex;
+    .pens, .projects, .posts {
+      position: relative;
+      left: -300px;
+      width: calc(250px / 3);
+      text-align: center;
+      color: white;
+      animation: fadeInMove 0.5s;
+      animation-fill-mode: forwards;
+      h6 {
+        text-transform: uppercase;
+        color: #9589da;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .ds {
+      &:nth-of-type(2) {
+        animation-delay: .1s;
+      }
+      &:nth-of-type(1) {
+        animation-delay: 0.25s;
+      }
+    }
+  }
+}
+
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes mvBottom {
+  0% {bottom: -150px;}
+  100% {bottom: 10px;}
+}
+
+@keyframes mvTop {
+  0% {top: -150px;}
+  100% {top: 40px;}
+}
+
+@keyframes dsTop {
+  0% {top: -150px;}
+  100% {top: 0;}
+}
+
+#snackbar {
+  visibility: hidden; /* Скрыть элемент по умолчанию */
+  min-width: 250px; /* Минимальная ширина */
+  margin-left: 0%; /* Центрирование элемента */
+  /* margin-left: -125px; */
+  background-color: #419748; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  text-align: center; /* Выравнивание текста */
+  border-radius: 12px; /* Скругление углов */
+  padding: 16px; /* Отступы внутри */
+  position: fixed; /* Фиксированное позиционирование */
+  z-index: 1; /* Поднять над другими элементами */
+  left: 50%; /* Центр экрана по горизонтали */
+  bottom: 30px; /* Расстояние от нижнего края */
+  font-size: 17px; /* Размер текста */
+  transform: translateX(-50%); /* Дополнительное центрирование по горизонтали */
+}
+
+#snackbar.show {
+  visibility: visible; /* Показать элемент */
+  -webkit-animation: fadein2 0.5s, fadeout2 0.5s 2.5s;
+  animation: fadein2 0.5s, fadeout2 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein2 {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein2 {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout2 {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout2 {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+</style>
+</body>
+</html>
